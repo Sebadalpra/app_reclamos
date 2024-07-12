@@ -1,0 +1,48 @@
+CORREO PARA TEST:
+
+email: correos.auto.uesa@gmail.com
+password: aeoc vhqb zkmc tsth
+
+--------------------
+
+18 es el pre
+20 de cada mes es el vencimiento
+22 es el post
+
+---------------------
+
+Ultimo paso:
+
+Ver como subir la app al servidor y dejarla como punto exe
+
+---------------------------------------------------------
+
+                                        INSTRUCTIVO PARA USUARIO
+
+EXPLICACIONES DE LOS EXCELS:
+
+db_fuente -> Es nuestro excel donde tenemos los emails de las diferentes compañias. En caso de tener que modificar, borrar o agregar correos lo haremos desde ese excel. De este excel surge los envios previos a todas las CIAS.
+
+produccion -> Es el excel que se descarga de Sinensup de las compañias que no presentaron luego de la fecha de vencimiento, debemos llamarlo de esta manera "produccion" para que el programa interprete el excel correctamente.
+
+db_produccion -> Es un excel que se crea automaticamente y une los excels "db_fuente" y "produccion". Contiene todas las compañias que no presentaron luego de la fecha de vencimiento con sus correspondientes emails. Este es el que el programa tomará para realizar los envios.
+
+-----------
+
+ACLARACIONES:
+1) No pueden existir CIAS en el db_fuente que no tengan emails porque interrumpe la ejecución del programa.
+2) Solo podran enviar correos aquellas personas que se encuentran en la lisa de permitidos.
+
+-----------
+
+PASOS A SEGUIR:
+
+1) Descargar el excel de las compañias que no presentaron luego de la fecha de vencimiento.
+    a) Una vez descargado cambiarle el nombre a "produccion" y dejarlo en la carpeta excels.
+
+2) Proceder con la app para enviar los correos.
+    a) Agregar email
+    b) Agregar password generada por la autenticacion en dos pasos
+    c) Seleccionar el tipo de mensaje
+    d) Enviar y confirmar.
+
